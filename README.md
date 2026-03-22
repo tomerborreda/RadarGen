@@ -19,7 +19,7 @@
 
 ## 🔥 News
 - [ ] Evaluation code is coming soon.
-- [x] [2025/03] RadarGen's inference and training pipelines for MAN TruckScenes and nuScenes are now available.
+- [x] [2026/03] RadarGen's inference and training pipelines for MAN TruckScenes and nuScenes are now available.
 - [x] [2025/12] [Paper](https://arxiv.org/abs/2512.17897) is on Arxiv!
 
 
