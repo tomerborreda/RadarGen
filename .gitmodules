@@ -1,0 +1,6 @@
+[submodule "UniDepth"]
+	path = UniDepth
+	url = git@github.com:lpiccinelli-eth/UniDepth.git
+[submodule "UFM"]
+	path = UFM
+	url = git@github.com:UniFlowMatch/UFM.git

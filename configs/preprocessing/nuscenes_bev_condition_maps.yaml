@@ -1,0 +1,30 @@
+# Configuration for creating BEV conditioning maps for nuScenes
+# Used for training RadarGen
+#
+# Usage:
+#   Single GPU:
+#     python scripts/create_bev_condition_maps.py --config_path configs/preprocessing/nuscenes_bev_condition_maps.yaml
+#
+#   Multi-GPU (8 GPUs):
+#     bash scripts/run_create_bev_condition_maps.sh 8 --config_path configs/preprocessing/nuscenes_bev_condition_maps.yaml
+
+# Dataset configuration
+dataset_name: nuscenes
+dataset_dir: /path/to/nuscenes  # TODO: Update this path
+dataset_version: v1.0-trainval
+
+# Output configuration
+save_dir: /path/to/output/bev_maps  # TODO: Update this path
+
+# Generation parameters
+resolution: 512           # Resolution of the BEV maps
+
+# Optimization options (Phase 1 & 2 optimizations for 3-10x speedup)
+use_batched_inference: true   # Batch cameras through foundation models (3-5x speedup)
+use_async_io: true            # Enable async disk writes (10-15% speedup)
+use_torch_compile: true       # torch.compile() optimization (1.5-2x additional speedup, requires PyTorch 2.0+)
+use_mixed_precision: true     # Use fp16 for segmentation model (saves GPU memory)
+
+# Optional filters
+# split: train                # Options: 'train', 'val', or null for all splits
+# camera_views: null          # Filter by specific cameras (null = use all cameras from adapter)

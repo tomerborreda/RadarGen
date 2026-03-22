@@ -1,0 +1,27 @@
+# Configuration for generating ground truth radar maps for TruckScenes
+# Used for training RadarGen
+#
+# Usage:
+#   Single GPU:
+#     python scripts/create_radar_maps.py --config_path configs/preprocessing/truckscenes_radar_maps.yaml
+#
+#   Multi-GPU (8 GPUs):
+#     bash scripts/run_create_radar_maps.sh 8 --config_path configs/preprocessing/truckscenes_radar_maps.yaml
+
+# Dataset configuration
+dataset_name: truckscenes
+dataset_dir: /path/to/truckscenes  # TODO: Update this path
+dataset_version: v1.0-trainval
+
+# Output configuration
+save_dir: /path/to/output/radar_maps  # TODO: Update this path
+
+# Creation parameters
+image_size: 512           # Resolution of the radar maps
+point_limit: 50.0         # Maximum distance for radar points (meters)
+nsweeps: 1                # Number of radar sweeps to aggregate
+sigma: 2.0                # Gaussian kernel sigma for point density map
+
+# Optional filters
+# filter_for_split: train   # Options: 'train', 'val', or null for all splits
+# filter_camera_views: null  # Filter by specific cameras (null = all cameras)
