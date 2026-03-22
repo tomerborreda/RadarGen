@@ -33,7 +33,7 @@
 ### Clone the Repository
 
 ```bash
-git clone --recursive https://github.com/your-org/RadarGen.git
+git clone --recursive https://github.com/tomerborreda/RadarGen.git
 cd RadarGen
 ```
 
