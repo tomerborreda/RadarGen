@@ -61,7 +61,7 @@ For manual installation, follow the steps in [`environment_setup.sh`](environmen
 We support multiple autonomous driving datasets. To get started, download and set up one of the following:
 
 **TruckScenes**:
-- Download: [truckscenes.com](https://truckscenes.com)
+- Download: [man.eu/truckscenes](https://www.man.eu/truckscenes)
 - Install devkit: `pip install truckscenes-devkit`
 
 **nuScenes**:
