@@ -1,0 +1,28 @@
+dataset_name: truckscenes
+dataset_dir: /path/to/truckscenes
+dataset_version: v1.0-trainval
+eval_split: val
+illuminated_scenes_only: true
+
+models:
+  - name: radargen
+    # Add checkpoint_path: /path/to/checkpoint.pth here, or set it directly in the model config yaml (config_path)
+    config_path: configs/RadarGen_600M_512px_TS_inference.yaml
+    device: cuda
+    params:
+      num_inference_steps: 20
+      seed: 42
+      image_size: 512
+      # Pre-computed BEV maps for faster evaluation
+      # Comment out or set to null to use full pipeline (compute BEV maps from scratch)
+      # bev_maps_dir: 
+
+compute_per_box_metrics: true
+mmd_report_classes:
+  - vehicle.trailer
+  - vehicle.truck
+  - vehicle.car
+
+output_dir: evaluation_results/truckscenes
+save_results: true
+verbose: true

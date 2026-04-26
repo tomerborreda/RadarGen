@@ -18,7 +18,7 @@
 
 
 ## 🔥 News
-- [ ] Evaluation code is coming soon.
+- [x] [2026/04] Evaluation code is now available.
 - [x] [2026/03] RadarGen's inference and training pipelines for MAN TruckScenes and nuScenes are now available.
 - [x] [2025/12] [Paper](https://arxiv.org/abs/2512.17897) is on Arxiv!
 
@@ -177,6 +177,17 @@ This creates Point Density, RCS, and Doppler maps from the ground truth radar da
    ```
 
 
+
+
+## 📊 Evaluation
+
+Run evaluation on TruckScenes:
+
+```bash
+python evaluation/scripts/evaluate.py --config evaluation/configs/truckscenes_eval.yaml
+```
+
+For additional information, see [`evaluation/README.md`](evaluation/README.md).
 
 
 ## Acknowledgements
