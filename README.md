@@ -213,11 +213,11 @@ Please refer to the respective repositories and datasets for full license detail
 If you find our work useful, please consider starring ⭐ the repository and citing our paper:
 
 ```
-@article{borreda2025radargen,
-      title={RadarGen: Automotive Radar Point Cloud Generation from Cameras},
-      author={Borreda, Tomer and Ding, Fangqiang and Fidler, Sanja and Huang, Shengyu and Litany, Or},
-      journal={arXiv preprint arXiv:2512.17897},
-      year={2025}
+@inproceedings{borreda2026radargen,
+    title={RadarGen: Automotive Radar Point Cloud Generation from Cameras},
+    author={Borreda, Tomer and Ding, Fangqiang and Fidler, Sanja and Huang, Shengyu and Litany, Or},
+    booktitle={ECCV},
+    year={2026}
 }
 ```
 
