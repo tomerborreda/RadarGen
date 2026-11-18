@@ -104,9 +104,9 @@ Pretrained model weights are available through huggingface.
 - MAN TruckScenes: 
   - Link: https://huggingface.co/TomerBo/RadarGen_600M_512px_TS/
   - Path: `hf://TomerBo/RadarGen_600M_512px_TS/RadarGen_600M_512px_TS.safetensors`
-- nuScenes: Coming soon
-
-
+- nuScenes:
+  - Link: https://huggingface.co/TomerBo/RadarGen_600M_512px_nuScenes/
+  - Path: `hf://TomerBo/RadarGen_600M_512px_nuScenes/RadarGen_600M_512px_nuScenes.safetensors`
 
 
 ## 🏋️ Training
